@@ -32,11 +32,28 @@
                                     <action selector="meowfactsAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zb0-tN-yuv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-lx-AHQ">
+                                <rect key="frame" x="123" y="303" width="123" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="geekJokeAPI"/>
+                                <connections>
+                                    <action selector="geekJokeAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UpV-RD-mLS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="geekJokeAPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHK-l4-VxV">
+                                <rect key="frame" x="135" y="265" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="geekJokeAPI" destination="LDa-lx-AHQ" id="QyT-Ml-Adw"/>
                         <outlet property="meowfactsAPI" destination="P4N-Hc-bzy" id="C7e-qD-fIY"/>
                     </connections>
                 </viewController>

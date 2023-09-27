@@ -30,12 +30,31 @@ class ViewController: UIViewController {
             }
     }
     
+    @IBOutlet weak var geekJokeAPI: UIButton!
+    
+    @IBAction func geekJokeAPI(_ sender: Any) {
+        Task {
+                do {
+                    let geekJokeResponse = try await GeekJokeAPI.fetchGeekJoke() // Call the Geek Joke API
+                    // Print the geek joke to the console
+                    print("Geek Joke: \(geekJokeResponse.joke)")
+                } catch GeekJokeAPIError.cannotConvertStringToURL {
+                    print("Please insert a valid URL")
+                } catch GeekJokeAPIError.networkError(let error) {
+                    print("Network error: \(error)")
+                } catch {
+                    print(error)
+                }
+            }
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
     }
-
-
 }
 
