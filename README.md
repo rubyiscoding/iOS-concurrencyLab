@@ -1,6 +1,6 @@
 # iOS-concurrencyLab
 
-## The purpose of this lab is to demonstrates the integration of the following APIs:
+#### The purpose of this lab is to demonstrate the integration of the following APIs:
 
 ### Meowfacts API
     - Provides random cat-related facts.
