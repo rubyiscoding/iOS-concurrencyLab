@@ -15,6 +15,7 @@
 		DB0A106D2AAF49C70039DE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0A106B2AAF49C70039DE1C /* LaunchScreen.storyboard */; };
 		E56A7BC32AC32BBF000A413E /* MeowfactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A7BC22AC32BBE000A413E /* MeowfactsAPI.swift */; };
 		E5E710692AC3C74600FBA704 /* GeekJokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E710682AC3C74600FBA704 /* GeekJokeAPI.swift */; };
+		E5E7106B2AC3D06700FBA704 /* AdviceSlipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7106A2AC3D06700FBA704 /* AdviceSlipAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DB0A106E2AAF49C70039DE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E56A7BC22AC32BBE000A413E /* MeowfactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowfactsAPI.swift; sourceTree = "<group>"; };
 		E5E710682AC3C74600FBA704 /* GeekJokeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekJokeAPI.swift; sourceTree = "<group>"; };
+		E5E7106A2AC3D06700FBA704 /* AdviceSlipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceSlipAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DB0A106E2AAF49C70039DE1C /* Info.plist */,
 				E56A7BC22AC32BBE000A413E /* MeowfactsAPI.swift */,
 				E5E710682AC3C74600FBA704 /* GeekJokeAPI.swift */,
+				E5E7106A2AC3D06700FBA704 /* AdviceSlipAPI.swift */,
 			);
 			path = concurrentcy;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				DB0A10652AAF49C50039DE1C /* ViewController.swift in Sources */,
 				E5E710692AC3C74600FBA704 /* GeekJokeAPI.swift in Sources */,
+				E5E7106B2AC3D06700FBA704 /* AdviceSlipAPI.swift in Sources */,
 				E56A7BC32AC32BBF000A413E /* MeowfactsAPI.swift in Sources */,
 				DB0A10612AAF49C50039DE1C /* AppDelegate.swift in Sources */,
 				DB0A10632AAF49C50039DE1C /* SceneDelegate.swift in Sources */,

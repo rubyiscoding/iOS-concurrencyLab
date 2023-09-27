@@ -46,10 +46,32 @@ class ViewController: UIViewController {
                     print(error)
                 }
             }
+        }
         
+    
+    @IBOutlet weak var adviceSlipAPI: UIButton!
+    
+    
+    @IBAction func adviceSlipAPI(_ sender: Any) {
         
+        Task {
+                   do {
+                       let adviceSlipResponse = try await AdviceSlipAPI.fetchAdviceSlip() // Call the Advice Slip API
+                       // Print the advice slip to the console
+                       print("Advice Slip: \(adviceSlipResponse.slip.advice)")
+                   } catch AdviceSlipAPIError.cannotConvertStringToURL {
+                       print("Please insert a valid URL")
+                   } catch AdviceSlipAPIError.networkError(let error) {
+                       print("Network error: \(error)")
+                   } catch {
+                       print(error)
+                   }
+               }
         
     }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
