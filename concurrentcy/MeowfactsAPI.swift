@@ -12,6 +12,7 @@ struct MeowfactsResponse: Codable {
     let data: [String]
 }
 
+// defining custom errors for the Meowfacts API
 enum MeowfactsAPIError: Error {
     case cannotConvertStringToURL
     case networkError(Error)
@@ -26,8 +27,10 @@ class MeowfactsAPI {
         }
         
         do {
+            // makes a network request and retrieve data
             let (data, _) = try await URLSession.shared.data(from: url)
             
+            // decodes the JSON response into a MeowfactsResponse object
             let response = try JSONDecoder().decode(MeowfactsResponse.self, from: data)
             
             return response

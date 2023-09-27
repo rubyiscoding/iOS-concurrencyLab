@@ -8,17 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
     
     @IBOutlet weak var meowfactsAPI: UIButton!
-    
     
     @IBAction func meowfactsAPI(_ sender: Any) {
         
         Task {
                 do {
                     let meowfactsResponse = try await MeowfactsAPI.fetchMeowfacts() // Call the Meowfacts API
-
                     // Print meow facts to the console
                     for (index, fact) in meowfactsResponse.data.enumerated() {
                         print("\(index): \(fact)")
@@ -31,8 +28,6 @@ class ViewController: UIViewController {
                     print(error)
                 }
             }
-        
-        
     }
     
     override func viewDidLoad() {
